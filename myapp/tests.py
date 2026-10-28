@@ -1,6 +1,6 @@
 from django.test import TestCase
-
-# Create your tests here.
+from django.urls import reverse
+from django.apps import apps
 
 # add tests for the views and models here
 class MyAppViewsTest(TestCase):
