@@ -18,7 +18,7 @@ class MyAppViewsTest(TestCase):
         self.assertContains(response, 'About Page')
         self.assertContains(response, 'about page.')
 
-    def test_about_page_returns_success_and_expected_content(self):
+    def test_contact_page_returns_success_and_expected_content(self):
         response = self.client.get(reverse('contact'))
 
         self.assertEqual(response.status_code, 200)
