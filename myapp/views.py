@@ -5,4 +5,4 @@ def home(request):
     return HttpResponse("<h1>Hello, World! This is the home page.</h1>")
 
 def about(request):
-    return HttpResponse("<h1>Hello, World!</h1><p>This is the about page.</p>")
+    return HttpResponse("<h1>About Page</h1><p>This is the about page.</p>")
