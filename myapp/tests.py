@@ -22,5 +22,8 @@ class MyAppViewsTest(TestCase):
 class MyAppModelsTest(TestCase):
     def test_app_config_is_registered(self):
         app_config = apps.get_app_config('myapp')
-
+        self.assertEqual(app_config.name, 'myapp')
+        
+    def test_app_config_is_registered_with_correct_name(self):
+        app_config = apps.get_app_config('myapp')
         self.assertEqual(app_config.name, 'myapp')
